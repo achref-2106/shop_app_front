@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "as_of": "2026-04-10",
+    "generated_at": "2026-04-10T08:36:00Z",
+    "timezone": "Africa/Tunis",
+    "currency": "TND",
+    "freshness_status": "FRESH",
+    "stale_reason": null,
+    "range_days": 14,
+    "forecast_method": "HEURISTIC_V1",
+    "forecast_inputs": {
+      "lookback_days_weekday": 70,
+      "lookback_days_recent": 14,
+      "trend_cap_low": 0.9,
+      "trend_cap_high": 1.1,
+      "manual_overrides_count": 1
+    }
+  },
+  "cash_projection": [
+    {
+      "date": "2026-04-10",
+      "opening_cash": 910.0,
+      "inflow_base": 290.0,
+      "inflow_conservative": 240.0,
+      "outflow_recommended": 520.0,
+      "outflow_committed_fixed": 330.0,
+      "closing_cash_base": 350.0,
+      "closing_cash_conservative": 300.0,
+      "reserve_target": 300.0,
+      "below_reserve_base": false,
+      "below_reserve_conservative": false,
+      "manual_override_applied": false
+    },
+    {
+      "date": "2026-04-11",
+      "opening_cash": 350.0,
+      "inflow_base": 260.0,
+      "inflow_conservative": 208.0,
+      "outflow_recommended": 200.0,
+      "outflow_committed_fixed": 180.0,
+      "closing_cash_base": 230.0,
+      "closing_cash_conservative": 178.0,
+      "reserve_target": 300.0,
+      "below_reserve_base": true,
+      "below_reserve_conservative": true,
+      "manual_override_applied": true
+    },
+    {
+      "date": "2026-04-12",
+      "opening_cash": 230.0,
+      "inflow_base": 280.0,
+      "inflow_conservative": 224.0,
+      "outflow_recommended": 140.0,
+      "outflow_committed_fixed": 160.0,
+      "closing_cash_base": 210.0,
+      "closing_cash_conservative": 154.0,
+      "reserve_target": 300.0,
+      "below_reserve_base": true,
+      "below_reserve_conservative": true,
+      "manual_override_applied": false
+    }
+  ],
+  "payables_vs_inflows": [
+    {
+      "date": "2026-04-10",
+      "recommended_payables": 520.0,
+      "committed_payables": 330.0,
+      "expected_inflows_base": 290.0,
+      "expected_inflows_conservative": 240.0,
+      "net_base": -230.0,
+      "net_conservative": -280.0
+    },
+    {
+      "date": "2026-04-11",
+      "recommended_payables": 200.0,
+      "committed_payables": 180.0,
+      "expected_inflows_base": 260.0,
+      "expected_inflows_conservative": 208.0,
+      "net_base": 60.0,
+      "net_conservative": 8.0
+    },
+    {
+      "date": "2026-04-12",
+      "recommended_payables": 140.0,
+      "committed_payables": 160.0,
+      "expected_inflows_base": 280.0,
+      "expected_inflows_conservative": 224.0,
+      "net_base": 140.0,
+      "net_conservative": 84.0
+    }
+  ],
+  "supplier_risk": [
+    {
+      "supplier_id": 3,
+      "supplier_name": "Stock Atlas",
+      "criticality_level": 5,
+      "is_key_supplier": true,
+      "total_remaining_amount": 310.0,
+      "overdue_amount": 310.0,
+      "days_over_tolerance_max": 7,
+      "days_over_tolerance_avg": 7.0,
+      "credits_count_open": 1,
+      "credits_count_critical": 1,
+      "risk_score": 98.0
+    },
+    {
+      "supplier_id": 8,
+      "supplier_name": "Beta Alimentaire",
+      "criticality_level": 4,
+      "is_key_supplier": true,
+      "total_remaining_amount": 270.0,
+      "overdue_amount": 270.0,
+      "days_over_tolerance_max": 3,
+      "days_over_tolerance_avg": 3.0,
+      "credits_count_open": 1,
+      "credits_count_critical": 1,
+      "risk_score": 89.0
+    }
+  ],
+  "summary": {
+    "days_below_reserve_base": 2,
+    "days_below_reserve_conservative": 2,
+    "worst_day_cash_conservative": 154.0,
+    "worst_day_date": "2026-04-12",
+    "max_daily_shortfall_conservative": 146.0,
+    "top_risk_supplier_id": 3
+  }
+}

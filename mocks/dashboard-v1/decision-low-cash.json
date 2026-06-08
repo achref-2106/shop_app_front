@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "as_of": "2026-04-10",
+    "generated_at": "2026-04-10T08:40:00Z",
+    "timezone": "Africa/Tunis",
+    "currency": "TND",
+    "freshness_status": "FRESH",
+    "stale_reason": null
+  },
+  "decision": {
+    "safe_to_pay_today": 0.0,
+    "reserve_target": 350.0,
+    "opening_cash": 280.0,
+    "expected_inflow_today_base": 170.0,
+    "expected_inflow_today_conservative": 120.0,
+    "committed_outflow_today": 90.0,
+    "already_paid_today": 20.0,
+    "recommended_outflow_today": 90.0,
+    "margin_after_recommended": -90.0,
+    "risk_critical_suppliers_count": 2
+  },
+  "chips": [
+    { "key": "CRITICAL", "label": "Risque eleve", "count": 2, "amount": 440.0 },
+    { "key": "PLAN_48H", "label": "A planifier 48h", "count": 2, "amount": 260.0 },
+    { "key": "CAN_WAIT", "label": "Peut attendre", "count": 3, "amount": 310.0 }
+  ],
+  "action_items": [
+    {
+      "payment_id": 311,
+      "supplier_id": 5,
+      "supplier_name": "Nord Prime",
+      "supplier_criticality_level": 5,
+      "is_key_supplier": true,
+      "expected_payment_date": "2026-04-04",
+      "remaining_amount": 260.0,
+      "days_overdue": 6,
+      "tolerance_days": 3,
+      "days_over_tolerance": 3,
+      "risk_tier": "CRITICAL",
+      "bucket_key": "CRITICAL",
+      "priority_rank": 1,
+      "priority_score": 97.0,
+      "recommended_action": "SETTLE_PARTIAL",
+      "recommended_amount": 70.0,
+      "recommended_amount_range": { "min": 50.0, "max": 90.0 },
+      "reason_codes": ["OVER_TOLERANCE", "KEY_SUPPLIER", "CASH_CONSTRAINED"],
+      "reason_text": "Retard critique mais caisse limitee, paiement partiel minimum recommande."
+    },
+    {
+      "payment_id": 327,
+      "supplier_id": 16,
+      "supplier_name": "Transit Food",
+      "supplier_criticality_level": 4,
+      "is_key_supplier": false,
+      "expected_payment_date": "2026-04-08",
+      "remaining_amount": 180.0,
+      "days_overdue": 2,
+      "tolerance_days": 2,
+      "days_over_tolerance": 0,
+      "risk_tier": "ATTENTION",
+      "bucket_key": "PLAN_48H",
+      "priority_rank": 2,
+      "priority_score": 68.0,
+      "recommended_action": "SETTLE_PARTIAL",
+      "recommended_amount": 20.0,
+      "recommended_amount_range": { "min": 10.0, "max": 30.0 },
+      "reason_codes": ["NEAR_TOLERANCE", "CASH_CONSTRAINED"],
+      "reason_text": "Paiement symbolique recommande pour maintenir la relation fournisseur."
+    },
+    {
+      "payment_id": 335,
+      "supplier_id": 23,
+      "supplier_name": "Soleil Trading",
+      "supplier_criticality_level": 2,
+      "is_key_supplier": false,
+      "expected_payment_date": "2026-04-14",
+      "remaining_amount": 90.0,
+      "days_overdue": 0,
+      "tolerance_days": 4,
+      "days_over_tolerance": 0,
+      "risk_tier": "ACCEPTABLE",
+      "bucket_key": "CAN_WAIT",
+      "priority_rank": 3,
+      "priority_score": 38.0,
+      "recommended_action": "DEFER",
+      "recommended_amount": 0.0,
+      "recommended_amount_range": null,
+      "reason_codes": ["CASH_CONSTRAINED"],
+      "reason_text": "Non prioritaire tant que la caisse reste sous pression."
+    }
+  ],
+  "totals": {
+    "recommended_today": 90.0,
+    "capacity_today": 0.0,
+    "gap": 90.0
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "as_of": "2026-04-10",
+    "generated_at": "2026-04-10T08:30:00Z",
+    "timezone": "Africa/Tunis",
+    "currency": "TND",
+    "freshness_status": "FRESH",
+    "stale_reason": null
+  },
+  "decision": {
+    "safe_to_pay_today": 450.0,
+    "reserve_target": 300.0,
+    "opening_cash": 680.0,
+    "expected_inflow_today_base": 320.0,
+    "expected_inflow_today_conservative": 260.0,
+    "committed_outflow_today": 190.0,
+    "already_paid_today": 40.0,
+    "recommended_outflow_today": 310.0,
+    "margin_after_recommended": 140.0,
+    "risk_critical_suppliers_count": 1
+  },
+  "chips": [
+    { "key": "CRITICAL", "label": "Risque eleve", "count": 2, "amount": 340.0 },
+    { "key": "PLAN_48H", "label": "A planifier 48h", "count": 3, "amount": 510.0 },
+    { "key": "CAN_WAIT", "label": "Peut attendre", "count": 4, "amount": 620.0 }
+  ],
+  "action_items": [
+    {
+      "payment_id": 101,
+      "supplier_id": 7,
+      "supplier_name": "Alpha Distribution",
+      "supplier_criticality_level": 5,
+      "is_key_supplier": true,
+      "expected_payment_date": "2026-04-01",
+      "remaining_amount": 220.0,
+      "days_overdue": 9,
+      "tolerance_days": 4,
+      "days_over_tolerance": 5,
+      "risk_tier": "CRITICAL",
+      "bucket_key": "CRITICAL",
+      "priority_rank": 1,
+      "priority_score": 95.0,
+      "recommended_action": "SETTLE_FULL",
+      "recommended_amount": 220.0,
+      "recommended_amount_range": null,
+      "reason_codes": ["OVER_TOLERANCE", "KEY_SUPPLIER"],
+      "reason_text": "Retard au-dela de la tolerance pour un fournisseur cle."
+    },
+    {
+      "payment_id": 126,
+      "supplier_id": 11,
+      "supplier_name": "Bravo Market",
+      "supplier_criticality_level": 3,
+      "is_key_supplier": false,
+      "expected_payment_date": "2026-04-07",
+      "remaining_amount": 180.0,
+      "days_overdue": 3,
+      "tolerance_days": 4,
+      "days_over_tolerance": 0,
+      "risk_tier": "ATTENTION",
+      "bucket_key": "PLAN_48H",
+      "priority_rank": 2,
+      "priority_score": 74.5,
+      "recommended_action": "SETTLE_PARTIAL",
+      "recommended_amount": 90.0,
+      "recommended_amount_range": { "min": 60.0, "max": 120.0 },
+      "reason_codes": ["NEAR_TOLERANCE", "CASH_SAFE"],
+      "reason_text": "Proche de la limite de tolerance, paiement partiel recommande."
+    },
+    {
+      "payment_id": 142,
+      "supplier_id": 18,
+      "supplier_name": "Comptoir Delta",
+      "supplier_criticality_level": 2,
+      "is_key_supplier": false,
+      "expected_payment_date": "2026-04-12",
+      "remaining_amount": 140.0,
+      "days_overdue": 0,
+      "tolerance_days": 5,
+      "days_over_tolerance": 0,
+      "risk_tier": "ACCEPTABLE",
+      "bucket_key": "CAN_WAIT",
+      "priority_rank": 3,
+      "priority_score": 42.0,
+      "recommended_action": "DEFER",
+      "recommended_amount": 0.0,
+      "recommended_amount_range": null,
+      "reason_codes": ["CASH_CONSTRAINED"],
+      "reason_text": "Peut attendre sans impact relationnel immediat."
+    }
+  ],
+  "totals": {
+    "recommended_today": 310.0,
+    "capacity_today": 450.0,
+    "gap": -140.0
+  }
+}

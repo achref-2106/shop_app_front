@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "as_of": "2026-04-10",
+    "generated_at": "2026-04-10T08:41:00Z",
+    "timezone": "Africa/Tunis",
+    "currency": "TND",
+    "freshness_status": "FRESH",
+    "stale_reason": null,
+    "range_days": 14,
+    "forecast_method": "HEURISTIC_V1",
+    "forecast_inputs": {
+      "lookback_days_weekday": 56,
+      "lookback_days_recent": 14,
+      "trend_cap_low": 0.9,
+      "trend_cap_high": 1.05,
+      "manual_overrides_count": 0
+    }
+  },
+  "cash_projection": [
+    {
+      "date": "2026-04-10",
+      "opening_cash": 280.0,
+      "inflow_base": 170.0,
+      "inflow_conservative": 120.0,
+      "outflow_recommended": 90.0,
+      "outflow_committed_fixed": 90.0,
+      "closing_cash_base": 270.0,
+      "closing_cash_conservative": 220.0,
+      "reserve_target": 350.0,
+      "below_reserve_base": true,
+      "below_reserve_conservative": true,
+      "manual_override_applied": false
+    },
+    {
+      "date": "2026-04-11",
+      "opening_cash": 270.0,
+      "inflow_base": 180.0,
+      "inflow_conservative": 126.0,
+      "outflow_recommended": 60.0,
+      "outflow_committed_fixed": 80.0,
+      "closing_cash_base": 310.0,
+      "closing_cash_conservative": 256.0,
+      "reserve_target": 350.0,
+      "below_reserve_base": true,
+      "below_reserve_conservative": true,
+      "manual_override_applied": false
+    },
+    {
+      "date": "2026-04-12",
+      "opening_cash": 310.0,
+      "inflow_base": 165.0,
+      "inflow_conservative": 116.0,
+      "outflow_recommended": 40.0,
+      "outflow_committed_fixed": 85.0,
+      "closing_cash_base": 350.0,
+      "closing_cash_conservative": 301.0,
+      "reserve_target": 350.0,
+      "below_reserve_base": false,
+      "below_reserve_conservative": true,
+      "manual_override_applied": false
+    }
+  ],
+  "payables_vs_inflows": [
+    {
+      "date": "2026-04-10",
+      "recommended_payables": 90.0,
+      "committed_payables": 90.0,
+      "expected_inflows_base": 170.0,
+      "expected_inflows_conservative": 120.0,
+      "net_base": 80.0,
+      "net_conservative": 30.0
+    },
+    {
+      "date": "2026-04-11",
+      "recommended_payables": 60.0,
+      "committed_payables": 80.0,
+      "expected_inflows_base": 180.0,
+      "expected_inflows_conservative": 126.0,
+      "net_base": 120.0,
+      "net_conservative": 66.0
+    },
+    {
+      "date": "2026-04-12",
+      "recommended_payables": 40.0,
+      "committed_payables": 85.0,
+      "expected_inflows_base": 165.0,
+      "expected_inflows_conservative": 116.0,
+      "net_base": 125.0,
+      "net_conservative": 76.0
+    }
+  ],
+  "supplier_risk": [
+    {
+      "supplier_id": 5,
+      "supplier_name": "Nord Prime",
+      "criticality_level": 5,
+      "is_key_supplier": true,
+      "total_remaining_amount": 260.0,
+      "overdue_amount": 260.0,
+      "days_over_tolerance_max": 3,
+      "days_over_tolerance_avg": 3.0,
+      "credits_count_open": 1,
+      "credits_count_critical": 1,
+      "risk_score": 93.0
+    },
+    {
+      "supplier_id": 16,
+      "supplier_name": "Transit Food",
+      "criticality_level": 4,
+      "is_key_supplier": false,
+      "total_remaining_amount": 180.0,
+      "overdue_amount": 180.0,
+      "days_over_tolerance_max": 0,
+      "days_over_tolerance_avg": 0.0,
+      "credits_count_open": 1,
+      "credits_count_critical": 0,
+      "risk_score": 62.0
+    }
+  ],
+  "summary": {
+    "days_below_reserve_base": 2,
+    "days_below_reserve_conservative": 3,
+    "worst_day_cash_conservative": 220.0,
+    "worst_day_date": "2026-04-10",
+    "max_daily_shortfall_conservative": 130.0,
+    "top_risk_supplier_id": 5
+  }
+}

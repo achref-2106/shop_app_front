@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "as_of": "2026-04-10",
+    "generated_at": "2026-04-10T08:31:00Z",
+    "timezone": "Africa/Tunis",
+    "currency": "TND",
+    "freshness_status": "FRESH",
+    "stale_reason": null,
+    "range_days": 7,
+    "forecast_method": "HEURISTIC_V1",
+    "forecast_inputs": {
+      "lookback_days_weekday": 56,
+      "lookback_days_recent": 14,
+      "trend_cap_low": 0.9,
+      "trend_cap_high": 1.1,
+      "manual_overrides_count": 0
+    }
+  },
+  "cash_projection": [
+    {
+      "date": "2026-04-10",
+      "opening_cash": 680.0,
+      "inflow_base": 320.0,
+      "inflow_conservative": 260.0,
+      "outflow_recommended": 310.0,
+      "outflow_committed_fixed": 190.0,
+      "closing_cash_base": 500.0,
+      "closing_cash_conservative": 440.0,
+      "reserve_target": 300.0,
+      "below_reserve_base": false,
+      "below_reserve_conservative": false,
+      "manual_override_applied": false
+    },
+    {
+      "date": "2026-04-11",
+      "opening_cash": 500.0,
+      "inflow_base": 290.0,
+      "inflow_conservative": 232.0,
+      "outflow_recommended": 180.0,
+      "outflow_committed_fixed": 120.0,
+      "closing_cash_base": 490.0,
+      "closing_cash_conservative": 432.0,
+      "reserve_target": 300.0,
+      "below_reserve_base": false,
+      "below_reserve_conservative": false,
+      "manual_override_applied": false
+    },
+    {
+      "date": "2026-04-12",
+      "opening_cash": 490.0,
+      "inflow_base": 250.0,
+      "inflow_conservative": 200.0,
+      "outflow_recommended": 90.0,
+      "outflow_committed_fixed": 130.0,
+      "closing_cash_base": 520.0,
+      "closing_cash_conservative": 470.0,
+      "reserve_target": 300.0,
+      "below_reserve_base": false,
+      "below_reserve_conservative": false,
+      "manual_override_applied": false
+    }
+  ],
+  "payables_vs_inflows": [
+    {
+      "date": "2026-04-10",
+      "recommended_payables": 310.0,
+      "committed_payables": 190.0,
+      "expected_inflows_base": 320.0,
+      "expected_inflows_conservative": 260.0,
+      "net_base": 10.0,
+      "net_conservative": -50.0
+    },
+    {
+      "date": "2026-04-11",
+      "recommended_payables": 180.0,
+      "committed_payables": 120.0,
+      "expected_inflows_base": 290.0,
+      "expected_inflows_conservative": 232.0,
+      "net_base": 110.0,
+      "net_conservative": 52.0
+    },
+    {
+      "date": "2026-04-12",
+      "recommended_payables": 90.0,
+      "committed_payables": 130.0,
+      "expected_inflows_base": 250.0,
+      "expected_inflows_conservative": 200.0,
+      "net_base": 160.0,
+      "net_conservative": 110.0
+    }
+  ],
+  "supplier_risk": [
+    {
+      "supplier_id": 7,
+      "supplier_name": "Alpha Distribution",
+      "criticality_level": 5,
+      "is_key_supplier": true,
+      "total_remaining_amount": 220.0,
+      "overdue_amount": 220.0,
+      "days_over_tolerance_max": 5,
+      "days_over_tolerance_avg": 5.0,
+      "credits_count_open": 1,
+      "credits_count_critical": 1,
+      "risk_score": 92.0
+    },
+    {
+      "supplier_id": 11,
+      "supplier_name": "Bravo Market",
+      "criticality_level": 3,
+      "is_key_supplier": false,
+      "total_remaining_amount": 180.0,
+      "overdue_amount": 180.0,
+      "days_over_tolerance_max": 0,
+      "days_over_tolerance_avg": 0.0,
+      "credits_count_open": 1,
+      "credits_count_critical": 0,
+      "risk_score": 51.0
+    }
+  ],
+  "summary": {
+    "days_below_reserve_base": 0,
+    "days_below_reserve_conservative": 0,
+    "worst_day_cash_conservative": 432.0,
+    "worst_day_date": "2026-04-11",
+    "max_daily_shortfall_conservative": 0.0,
+    "top_risk_supplier_id": 7
+  }
+}
